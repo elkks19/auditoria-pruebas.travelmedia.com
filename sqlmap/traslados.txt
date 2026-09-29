@@ -97,3 +97,31 @@ it is recommended to perform only basic UNION tests if there is not at least one
 [19:57:51] [WARNING] heuristic (basic) test shows that POST parameter 'remember' might not be injectable
 [19:59:20] [INFO] testing for SQL injection on POST parameter 'remember'
 [19:59:20] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[20:01:46] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[20:01:48] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[20:01:50] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[20:01:52] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[20:01:55] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[20:01:57] [INFO] testing 'H2 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (CAST)'
+[20:01:59] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[20:08:19] [WARNING] POST parameter 'remember' does not seem to be injectable
+[20:08:19] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[20:08:19] [WARNING] HTTP error codes detected during run:
+406 (Not Acceptable) - 71 times
+[5/5] Form:
+POST https://pruebas.travelamedida.com/cambiar-moneda/BOB
+POST data: _token=fd2nYptsWfcF4xmV1vFqEHotkW0q24Laa9G5A6hj
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=fd2nYptsWfcF4xmV1vFqEHotkW0q24Laa9G5A6hj]: _token=fd2nYptsWfcF4xmV1vFqEHotkW0q24Laa9G5A6hj
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+got a 302 redirect to 'https://pruebas.travelamedida.com/login'. Do you want to follow? [Y/n] Y
+redirect is a result of a POST request. Do you want to resend original POST data to a new location? [Y/n] Y
+[20:08:50] [INFO] testing if the target URL content is stable
+you provided a HTTP Cookie header value, while target URL provides its own cookies within HTTP Set-Cookie header which intersect with yours. Do you want to merge them in further requests? [Y/n] Y
+[20:09:17] [INFO] ignoring POST parameter '_token'
+[20:09:17] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[20:09:17] [INFO] you can find results of scanning in multiple targets mode inside the CSV file '/share/Unifranz/Diplomado auditoria informatica/Modulo 2/proyecto/sqlmap/traslados-out/results-09282026_0725pm.csv'
+
+[*] ending @ 20:09:17 /2026-09-28/
+
