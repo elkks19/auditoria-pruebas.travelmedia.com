@@ -1,0 +1,20 @@
+
+; <<>> DiG 9.20.29 <<>> A pruebas.travelamedida.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43314
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;pruebas.travelamedida.com.	IN	A
+
+;; ANSWER SECTION:
+pruebas.travelamedida.com. 3600	IN	A	162.215.121.114
+
+;; Query time: 2192 msec
+;; SERVER: 100.107.121.144#53(100.107.121.144) (UDP)
+;; WHEN: Mon Sep 28 18:39:15 -04 2026
+;; MSG SIZE  rcvd: 95
+

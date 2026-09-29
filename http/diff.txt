@@ -1,0 +1,245 @@
+--- http/http.html	2026-09-28 19:09:50.837815600 -0400
++++ http/https.html	2026-09-28 19:09:55.307226100 -0400
+@@ -5,10 +5,10 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+     <!-- CSRF Token -->
+-    <meta name="csrf-token" content="ul4cI37tW5XplMAtvKIJdX2l2x3BvQw8stKLs4v7">
++    <meta name="csrf-token" content="5MnaXEJpM5usdqg7a7526WTfcoQIxGKGP4Dzg9RH">
+ 
+     <title>Travelamedida</title>
+-    <link rel="icon" href="http://pruebas.travelamedida.com/favicon.ico" type="image/x-icon">
++    <link rel="icon" href="https://pruebas.travelamedida.com/favicon.ico" type="image/x-icon">
+     <!-- Fonts -->
+     <link rel="dns-prefetch" href="//fonts.bunny.net">
+     <link href="https://fonts.bunny.net/css?family=Nunito:300,400,600,700&display=swap" rel="stylesheet">
+@@ -17,9 +17,9 @@
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     
+     <!-- Vinculando el archivo CSS -->
+-    <link href="http://pruebas.travelamedida.com/css/styles.css" rel="stylesheet">
++    <link href="https://pruebas.travelamedida.com/css/styles.css" rel="stylesheet">
+     <!-- Select2 CSS -->
+-    <link href="http://pruebas.travelamedida.com/css/select2.min.css" rel="stylesheet" />
++    <link href="https://pruebas.travelamedida.com/css/select2.min.css" rel="stylesheet" />
+ 
+     <!-- Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDDZM9GWSJ"></script>
+@@ -30,16 +30,16 @@
+         gtag('config', 'G-QDDZM9GWSJ');
+     </script>
+     
+-     <link rel="preload" as="style" href="http://pruebas.travelamedida.com/build/assets/app-BaVMVknW.css" /><link rel="stylesheet" href="http://pruebas.travelamedida.com/build/assets/app-BaVMVknW.css" /> 
++     <link rel="preload" as="style" href="https://pruebas.travelamedida.com/build/assets/app-BaVMVknW.css" /><link rel="stylesheet" href="https://pruebas.travelamedida.com/build/assets/app-BaVMVknW.css" /> 
+ 
+ </head>
+ <body class="bg-neutral text-primary">
+     <div id="app">
+         <nav class="navbar navbar-expand-md bg-primary  shadow-sm">
+             <div class="container">
+-                <a class="navbar-brand d-flex align-items-center fw-bold" href="http://pruebas.travelamedida.com" aria-label="Travelamedida - Inicio">
++                <a class="navbar-brand d-flex align-items-center fw-bold" href="https://pruebas.travelamedida.com" aria-label="Travelamedida - Inicio">
+                     <div class="logo-container bg-white rounded-3 p-2 shadow-sm me-2" style="height: 90px; width: 110px; display: flex; align-items: center; justify-content: center;">
+-                        <img src="http://pruebas.travelamedida.com/travel.svg" alt="" style="height: 75px; width: auto;" class="d-block">
++                        <img src="https://pruebas.travelamedida.com/travel.svg" alt="" style="height: 75px; width: auto;" class="d-block">
+                     </div>
+                   
+                 </a>
+@@ -50,25 +50,25 @@
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav me-auto">
+                         <li class="nav-item">
+-                            <a class="nav-link nav-btn border rounded text-white" href="http://pruebas.travelamedida.com/traslados">
++                            <a class="nav-link nav-btn border rounded text-white" href="https://pruebas.travelamedida.com/traslados">
+                                 <i class="fas fa-car me-2"></i>
+                                 Traslados
+                             </a>
+                         </li>
+                         <li class="nav-item">
+-                            <a class="nav-link nav-btn border rounded text-white" href="http://pruebas.travelamedida.com/hoteles">
++                            <a class="nav-link nav-btn border rounded text-white" href="https://pruebas.travelamedida.com/hoteles">
+                                 <i class="fas fa-bed me-2"></i>
+                                 Alojamientos
+                             </a>
+                         </li>
+                         <li class="nav-item">
+-                            <a class="nav-link nav-btn border rounded text-white" href="http://pruebas.travelamedida.com/tours">
++                            <a class="nav-link nav-btn border rounded text-white" href="https://pruebas.travelamedida.com/tours">
+                                 <i class="fas fa-map-marked-alt me-2"></i>
+                                 Atracciones y Tours
+                             </a>
+                         </li>
+                         <li class="nav-item">
+-                            <a class="nav-link text-white d-flex align-items-center" href="http://pruebas.travelamedida.com/carritos/show">
++                            <a class="nav-link text-white d-flex align-items-center" href="https://pruebas.travelamedida.com/carritos/show">
+                                 <i class="fas fa-shopping-cart me-2"></i>
+                                 Carrito
+                             </a>
+@@ -92,7 +92,7 @@
+                                         <span class="me-2 fw-bold">$</span>
+                                         USD - Dólar Estadounidense
+                                         <form id="currency-form-USD" action="/cambiar-moneda/USD" method="POST" class="d-none">
+-                                            <input type="hidden" name="_token" value="ul4cI37tW5XplMAtvKIJdX2l2x3BvQw8stKLs4v7" autocomplete="off">                                        </form>
++                                            <input type="hidden" name="_token" value="5MnaXEJpM5usdqg7a7526WTfcoQIxGKGP4Dzg9RH" autocomplete="off">                                        </form>
+                                     </a>
+                                 </li>
+                                 <li>
+@@ -102,7 +102,7 @@
+                                         <span class="me-2 fw-bold">Bs</span>
+                                         BOB - Boliviano
+                                         <form id="currency-form-BOB" action="/cambiar-moneda/BOB" method="POST" class="d-none">
+-                                            <input type="hidden" name="_token" value="ul4cI37tW5XplMAtvKIJdX2l2x3BvQw8stKLs4v7" autocomplete="off">                                        </form>
++                                            <input type="hidden" name="_token" value="5MnaXEJpM5usdqg7a7526WTfcoQIxGKGP4Dzg9RH" autocomplete="off">                                        </form>
+                                     </a>
+                                 </li>
+                                 <li>
+@@ -112,7 +112,7 @@
+                                         <span class="me-2 fw-bold">R$</span>
+                                         BRL - Real Brasileño
+                                         <form id="currency-form-BRL" action="/cambiar-moneda/BRL" method="POST" class="d-none">
+-                                            <input type="hidden" name="_token" value="ul4cI37tW5XplMAtvKIJdX2l2x3BvQw8stKLs4v7" autocomplete="off">                                        </form>
++                                            <input type="hidden" name="_token" value="5MnaXEJpM5usdqg7a7526WTfcoQIxGKGP4Dzg9RH" autocomplete="off">                                        </form>
+                                     </a>
+                                 </li>
+                                 <li>
+@@ -122,7 +122,7 @@
+                                         <span class="me-2 fw-bold">₲</span>
+                                         PYG - Guaraní Paraguayo
+                                         <form id="currency-form-PYG" action="/cambiar-moneda/PYG" method="POST" class="d-none">
+-                                            <input type="hidden" name="_token" value="ul4cI37tW5XplMAtvKIJdX2l2x3BvQw8stKLs4v7" autocomplete="off">                                        </form>
++                                            <input type="hidden" name="_token" value="5MnaXEJpM5usdqg7a7526WTfcoQIxGKGP4Dzg9RH" autocomplete="off">                                        </form>
+                                     </a>
+                                 </li>
+                             </ul>
+@@ -138,19 +138,19 @@
+                             </a>
+                             <ul class="dropdown-menu dropdown-menu-end shadow border-0" aria-labelledby="idiomaDropdown">
+                                 <li>
+-                                    <a class="dropdown-item d-flex align-items-center py-2" href="http://pruebas.travelamedida.com/lang/es">
++                                    <a class="dropdown-item d-flex align-items-center py-2" href="https://pruebas.travelamedida.com/lang/es">
+                                         <span class="flag-icon flag-icon-es me-2"></span>
+                                         Español
+                                     </a>
+                                 </li>
+                                 <li>
+-                                    <a class="dropdown-item d-flex align-items-center py-2" href="http://pruebas.travelamedida.com/lang/pt">
++                                    <a class="dropdown-item d-flex align-items-center py-2" href="https://pruebas.travelamedida.com/lang/pt">
+                                         <span class="flag-icon flag-icon-pt me-2"></span>
+                                         Português
+                                     </a>
+                                 </li>
+                                 <li>
+-                                    <a class="dropdown-item d-flex align-items-center py-2" href="http://pruebas.travelamedida.com/lang/en">
++                                    <a class="dropdown-item d-flex align-items-center py-2" href="https://pruebas.travelamedida.com/lang/en">
+                                         <span class="flag-icon flag-icon-gb me-2"></span>
+                                         English
+                                     </a>
+@@ -160,14 +160,14 @@
+ 
+                         <!-- Authentication Links -->
+                                                                                     <li class="nav-item me-2">
+-                                    <a class="btn btn-outline-light btn-sm rounded-pill px-3" href="http://pruebas.travelamedida.com/login">
++                                    <a class="btn btn-outline-light btn-sm rounded-pill px-3" href="https://pruebas.travelamedida.com/login">
+                                         <i class="fas fa-sign-in-alt me-1" aria-hidden="true"></i>
+                                         Iniciar sesión
+                                     </a>
+                                 </li>
+                             
+                                                             <li class="nav-item">
+-                                    <a  class="btn btn-outline-light btn-sm rounded-pill px-3" href="http://pruebas.travelamedida.com/register">
++                                    <a  class="btn btn-outline-light btn-sm rounded-pill px-3" href="https://pruebas.travelamedida.com/register">
+                                         <i class="fas fa-user-plus me-1" aria-hidden="true"></i>
+                                         Registro
+                                     </a>
+@@ -187,16 +187,16 @@
+             <p class="hero-subtitle">Descubre experiencias únicas con nuestros traslados, hoteles y tours exclusivos </p>
+             
+             <div class="hero-actions">
+-                <a href="http://pruebas.travelamedida.com/traslados" class="btn btn-primary btn-hero">
++                <a href="https://pruebas.travelamedida.com/traslados" class="btn btn-primary btn-hero">
+                     <i class="fas fa-car me-2 fa-lg"></i>
+                     Traslados
+                 </a>
+-                <a href="http://pruebas.travelamedida.com/hoteles" class="btn btn-secondary btn-hero">
++                <a href="https://pruebas.travelamedida.com/hoteles" class="btn btn-secondary btn-hero">
+                     <i class="fas fa-bed me-2 fa-lg"></i>
+                     Alojamientos
+                 </a>
+ 
+-                <a href="http://pruebas.travelamedida.com/tours" class="btn btn-outline-info btn-hero">
++                <a href="https://pruebas.travelamedida.com/tours" class="btn btn-outline-info btn-hero">
+                      <i class="fas fa-map-marked-alt me-2 fa-lg"></i>
+                     Atracciones y Tours
+                 </a>
+@@ -205,7 +205,7 @@
+         </div>
+         
+         <div class="hero-image">
+-            <img src="http://pruebas.travelamedida.com/images/banner.jpg" alt="Experiencias de viaje" class="img-hero">
++            <img src="https://pruebas.travelamedida.com/images/banner.jpg" alt="Experiencias de viaje" class="img-hero">
+         </div>
+     </section>
+ 
+@@ -260,7 +260,7 @@
+         <h2 class="section-title">Destinos populares</h2>
+         <div class="destinations-grid">
+             <div class="destination-card">
+-                <img src="http://pruebas.travelamedida.com/images/destination1.jpg" alt="Samaipata">
++                <img src="https://pruebas.travelamedida.com/images/destination1.jpg" alt="Samaipata">
+                 <div class="destination-overlay">
+                     <h3>Fuerte de Samaipata</h3>
+                     <a href="#" class="btn btn-outline">Explorar</a>
+@@ -268,7 +268,7 @@
+             </div>
+             
+             <div class="destination-card">
+-                <img src="http://pruebas.travelamedida.com/images/destination2.jpg" alt="Santa Cruz de la Sierra">
++                <img src="https://pruebas.travelamedida.com/images/destination2.jpg" alt="Santa Cruz de la Sierra">
+                 <div class="destination-overlay">
+                     <h3>Santa Cruz</h3>
+                     <a href="#" class="btn btn-outline">Explorar</a>
+@@ -276,7 +276,7 @@
+             </div>
+             
+             <div class="destination-card">
+-                <img src="http://pruebas.travelamedida.com/images/destination3.jpg" alt="Salar de Uyuni">
++                <img src="https://pruebas.travelamedida.com/images/destination3.jpg" alt="Salar de Uyuni">
+                 <div class="destination-overlay">
+                     <h3>Uyuni</h3>
+                     <a href="#" class="btn btn-outline">Explorar</a>
+@@ -297,7 +297,7 @@
+                     <p>"Excelente servicio desde el primer momento. Los traslados fueron puntuales y los hoteles superaron nuestras expectativas."</p>
+                 </div>
+                 <div class="testimonial-author">
+-                    <img src="http://pruebas.travelamedida.com/images/user1.jpg" alt="María González">
++                    <img src="https://pruebas.travelamedida.com/images/user1.jpg" alt="María González">
+                     <div>
+                         <h4>María González</h4>
+                         <span>Viajó a Santa Cruz</span>
+@@ -313,7 +313,7 @@
+                     <p>"Los tours fueron increíbles, especialmente el de ruinas del Fuerte. Los guías muy profesionales y conocedores."</p>
+                 </div>
+                 <div class="testimonial-author">
+-                    <img src="http://pruebas.travelamedida.com/images/user2.jpg" alt="Carlos Martínez">
++                    <img src="https://pruebas.travelamedida.com/images/user2.jpg" alt="Carlos Martínez">
+                     <div>
+                         <h4>Carlos Martínez</h4>
+                         <span>Viajó a Samaipata</span>
+@@ -333,7 +333,7 @@
+                     <div class="col-lg-4 col-md-6">
+                         <div class="d-flex align-items-center mb-3">
+                             <div class="logo-container bg-white rounded-2 p-1 me-3" style="height: 50px; width: 50px; display: flex; align-items: center; justify-content: center;">
+-                                <img src="http://pruebas.travelamedida.com/travel.svg" alt="" style="height: 35px; width: auto;" class="d-block">
++                                <img src="https://pruebas.travelamedida.com/travel.svg" alt="" style="height: 35px; width: auto;" class="d-block">
+                             </div>
+                             <h5 class="mb-0 text-accent fw-bold">Travelamedida</h5>
+                         </div>
+@@ -422,6 +422,6 @@
+             </div>
+         </footer>
+     </div>
+-    <link rel="modulepreload" href="http://pruebas.travelamedida.com/build/assets/app-BT7_n6kl.js" /><script type="module" src="http://pruebas.travelamedida.com/build/assets/app-BT7_n6kl.js"></script> 
++    <link rel="modulepreload" href="https://pruebas.travelamedida.com/build/assets/app-BT7_n6kl.js" /><script type="module" src="https://pruebas.travelamedida.com/build/assets/app-BT7_n6kl.js"></script> 
+     </body>
+ </html>
+\ No hay ningún carácter de nueva línea al final del archivo

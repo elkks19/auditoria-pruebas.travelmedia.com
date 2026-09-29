@@ -1,0 +1,75 @@
+Connecting to 162.215.121.114
+depth=3 C=US, O=Internet Security Research Group, CN=ISRG Root X2
+verify return:1
+depth=2 C=US, O=ISRG, CN=Root YE
+verify return:1
+depth=1 C=US, O=Let's Encrypt, CN=YE2
+verify return:1
+depth=0 CN=pruebas.travelamedida.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=pruebas.travelamedida.com
+   i:C=US, O=Let's Encrypt, CN=YE2
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Sep 17 19:17:34 2026 GMT; NotAfter: Dec 16 19:17:33 2026 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=YE2
+   i:C=US, O=ISRG, CN=Root YE
+   a:PKEY: EC, (secp384r1); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Sep  3 00:00:00 2025 GMT; NotAfter: Sep  2 23:59:59 2028 GMT
+ 2 s:C=US, O=ISRG, CN=Root YE
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X2
+   a:PKEY: EC, (secp384r1); sigalg: ecdsa-with-SHA384
+   v:NotBefore: May 13 00:00:00 2026 GMT; NotAfter: Sep  2 23:59:59 2032 GMT
+ 3 s:C=US, O=Internet Security Research Group, CN=ISRG Root X2
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: EC, (secp384r1); sigalg: sha256WithRSAEncryption
+   v:NotBefore: May 13 00:00:00 2026 GMT; NotAfter: Sep  2 23:59:59 2032 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDvjCCA0SgAwIBAgISBljJoeC4lq0v5d+f1VrOJdqVMAoGCCqGSM49BAMDMDMx
+CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNZ
+RTIwHhcNMjYwOTE3MTkxNzM0WhcNMjYxMjE2MTkxNzMzWjAkMSIwIAYDVQQDExlw
+cnVlYmFzLnRyYXZlbGFtZWRpZGEuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcD
+QgAE/WrGZwziSA1oFKfvbuv41C/tsS4lsAuJNR9on7X7FYuQ/wGHRyZNLPSDvqls
+yHRr5/O85yHq7HlnTW5NY6FxjqOCAkUwggJBMA4GA1UdDwEB/wQEAwIHgDATBgNV
+HSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBR/ukLiNvqu
+iywdzXmdvvZxI1AQLDAfBgNVHSMEGDAWgBS5WfKOzyLwhtM3SP92FBi6gthVhzAz
+BggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAKGF2h0dHA6Ly95ZTIuaS5sZW5jci5v
+cmcvMEMGA1UdEQQ8MDqCGXBydWViYXMudHJhdmVsYW1lZGlkYS5jb22CHXd3dy5w
+cnVlYmFzLnRyYXZlbGFtZWRpZGEuY29tMBMGA1UdIAQMMAowCAYGZ4EMAQIBMC4G
+A1UdHwQnMCUwI6AhoB+GHWh0dHA6Ly95ZTIuYy5sZW5jci5vcmcvMjIuY3JsMIIB
+CwYKKwYBBAHWeQIEAgSB/ASB+QD3AHUAlE5Dh/rswe+B8xkkJqgYZQHH0184AgE/
+cmd9VTcuGdgAAAGgsQMUmwAABAMARjBEAiB2nYBSD+uzOc5lRmfnakz0ONJYtDfm
+8oI+qpgZAaV59wIgbLrg7AnMJPzZJz3W5IvX4KAWBcbe69EPESB74lErY8UAfgAa
+i51rD/6/gbR5OcbSMQqG1tEC1PBG4hgsneNfXiYl7wAAAaCxAxjzAAgAAAUAQk3h
+ogQDAEcwRQIgOhEYs1L/XpOtcAmrYHwiGmuDRuTuoqMsT7EYPjPpUqACIQCtfgdg
+0L/GjQMOaW/0JQ2BYduPN/x9Q6KXk3pxzBxrUTAKBggqhkjOPQQDAwNoADBlAjBW
+xW8ut56Maj6vM5rvV239qgMpCRwAyPul9sxNviNb0SKv2zc1RUZX+WHl3OutiLMC
+MQCH1NLdWgsZFrjW7QYU14nE93q4bNU5dTj0J2VJwsLHv+bixCb0xgcsYnVSj88+
+9IE=
+-----END CERTIFICATE-----
+subject=CN=pruebas.travelamedida.com
+issuer=C=US, O=Let's Encrypt, CN=YE2
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3830 bytes and written 1647 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE

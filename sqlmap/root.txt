@@ -1,0 +1,256 @@
+        ___
+       __H__
+ ___ ___[,]_____ ___ ___  {1.10.7#stable}
+|_ -| . [']     | .'| . |
+|___|_  [)]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 19:24:35 /2026-09-28/
+
+[19:24:35] [WARNING] using '/share/Unifranz/Diplomado auditoria informatica/Modulo 2/proyecto/sqlmap/root-out' as the output directory
+do you want to check for the existence of site's sitemap(.xml) [y/N] N
+[19:24:35] [INFO] starting crawler for target URL 'https://pruebas.travelamedida.com/'
+[19:24:35] [INFO] searching for links with depth 1
+[19:24:38] [INFO] searching for links with depth 2
+please enter number of threads? [Enter for 1 (current)] 1
+[19:24:38] [WARNING] running in a single-thread mode. This could take a while
+got a 302 redirect to 'https://pruebas.travelamedida.com/login'. Do you want to follow? [Y/n] Y
+[19:24:52] [INFO] heuristics detected web page charset 'utf-8'
+do you want to normalize crawling results [Y/n] Y
+do you want to store crawling results to a temporary file for eventual further processing with other tools [y/N] N
+[19:25:23] [INFO] found a total of 6 targets
+[1/6] Form:
+POST https://pruebas.travelamedida.com/cambiar-moneda/USD
+POST data: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo]: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+[19:25:23] [INFO] using '/share/Unifranz/Diplomado auditoria informatica/Modulo 2/proyecto/sqlmap/root-out/results-09282026_0725pm.csv' as the CSV results file in multiple targets mode
+[19:25:25] [WARNING] the web server responded with an HTTP error code (419) which could interfere with the results of the tests
+you have not declared cookie(s), while server wants to set its own ('laravel_session_1765493569=eyJpdiI6Ind...IjoiIn0%3D'). Do you want to use those [Y/n] Y
+[19:25:25] [INFO] checking if the target is protected by some kind of WAF/IPS
+[19:25:26] [CRITICAL] WAF/IPS identified as 'ModSecurity (Trustwave)'
+are you sure that you want to continue with further target testing? [Y/n] Y
+do you want sqlmap to try to automatically bypass the WAF/IPS during the run (e.g. by using a non-scanner User-Agent and tamper script(s))? [Y/n] Y
+[19:25:26] [INFO] using a random (non-scanner) User-Agent and browser-like headers to bypass the WAF/IPS
+[19:25:26] [INFO] testing if the target URL content is stable
+[19:25:26] [INFO] target URL content is stable
+[19:25:26] [INFO] ignoring POST parameter '_token'
+[19:25:26] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. Please retry with the switch '--text-only' (along with --technique=BU) as this case looks like a perfect candidate (low textual content along with inability of comparison engine to detect at least one dynamic parameter). As a WAF/IPS ('modsecurity') was identified during the run, you are strongly advised to retry with option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[19:25:26] [WARNING] HTTP error codes detected during run:
+419 (?) - 2 times, 406 (Not Acceptable) - 1 times
+[2/6] Form:
+POST https://pruebas.travelamedida.com/cambiar-moneda/BRL
+POST data: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo]: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+[19:25:29] [WARNING] the web server responded with an HTTP error code (419) which could interfere with the results of the tests
+you have not declared cookie(s), while server wants to set its own ('laravel_session_1765493569=eyJpdiI6Ims...IjoiIn0%3D'). Do you want to use those [Y/n] Y
+[19:25:29] [INFO] checking if the target is protected by some kind of WAF/IPS
+[19:25:29] [CRITICAL] WAF/IPS identified as 'ModSecurity (Trustwave)'
+are you sure that you want to continue with further target testing? [Y/n] Y
+do you want sqlmap to try to automatically bypass the WAF/IPS during the run (e.g. by using a non-scanner User-Agent and tamper script(s))? [Y/n] Y
+[19:25:29] [INFO] using a random (non-scanner) User-Agent and browser-like headers to bypass the WAF/IPS
+[19:25:29] [INFO] testing if the target URL content is stable
+[19:25:30] [INFO] target URL content is stable
+[19:25:30] [INFO] ignoring POST parameter '_token'
+[19:25:30] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. Please retry with the switch '--text-only' (along with --technique=BU) as this case looks like a perfect candidate (low textual content along with inability of comparison engine to detect at least one dynamic parameter). As a WAF/IPS ('modsecurity') was identified during the run, you are strongly advised to retry with option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[19:25:30] [WARNING] HTTP error codes detected during run:
+419 (?) - 2 times, 406 (Not Acceptable) - 1 times
+[3/6] Form:
+POST https://pruebas.travelamedida.com/cambiar-moneda/BOB
+POST data: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo]: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+[19:25:33] [WARNING] the web server responded with an HTTP error code (419) which could interfere with the results of the tests
+you have not declared cookie(s), while server wants to set its own ('laravel_session_1765493569=eyJpdiI6InZ...IjoiIn0%3D'). Do you want to use those [Y/n] Y
+[19:25:33] [INFO] checking if the target is protected by some kind of WAF/IPS
+[19:25:33] [CRITICAL] WAF/IPS identified as 'ModSecurity (Trustwave)'
+are you sure that you want to continue with further target testing? [Y/n] Y
+do you want sqlmap to try to automatically bypass the WAF/IPS during the run (e.g. by using a non-scanner User-Agent and tamper script(s))? [Y/n] Y
+[19:25:33] [INFO] using a random (non-scanner) User-Agent and browser-like headers to bypass the WAF/IPS
+[19:25:33] [INFO] testing if the target URL content is stable
+[19:25:33] [INFO] target URL content is stable
+[19:25:33] [INFO] ignoring POST parameter '_token'
+[19:25:33] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. Please retry with the switch '--text-only' (along with --technique=BU) as this case looks like a perfect candidate (low textual content along with inability of comparison engine to detect at least one dynamic parameter). As a WAF/IPS ('modsecurity') was identified during the run, you are strongly advised to retry with option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[19:25:33] [WARNING] HTTP error codes detected during run:
+419 (?) - 2 times, 406 (Not Acceptable) - 1 times
+[4/6] Form:
+POST https://pruebas.travelamedida.com/cambiar-moneda/PYG
+POST data: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo]: _token=tltOa1LvrmnUMZ1bT6xGoquFJVeChRwdF2Gwe8zo
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+[19:25:36] [WARNING] the web server responded with an HTTP error code (419) which could interfere with the results of the tests
+you have not declared cookie(s), while server wants to set its own ('laravel_session_1765493569=eyJpdiI6Im9...IjoiIn0%3D'). Do you want to use those [Y/n] Y
+[19:25:36] [INFO] checking if the target is protected by some kind of WAF/IPS
+[19:25:36] [CRITICAL] WAF/IPS identified as 'ModSecurity (Trustwave)'
+are you sure that you want to continue with further target testing? [Y/n] Y
+do you want sqlmap to try to automatically bypass the WAF/IPS during the run (e.g. by using a non-scanner User-Agent and tamper script(s))? [Y/n] Y
+[19:25:36] [INFO] using a random (non-scanner) User-Agent and browser-like headers to bypass the WAF/IPS
+[19:25:36] [INFO] testing if the target URL content is stable
+[19:25:37] [INFO] target URL content is stable
+[19:25:37] [INFO] ignoring POST parameter '_token'
+[19:25:37] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. Please retry with the switch '--text-only' (along with --technique=BU) as this case looks like a perfect candidate (low textual content along with inability of comparison engine to detect at least one dynamic parameter). As a WAF/IPS ('modsecurity') was identified during the run, you are strongly advised to retry with option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[19:25:37] [WARNING] HTTP error codes detected during run:
+419 (?) - 2 times, 406 (Not Acceptable) - 1 times
+[5/6] Form:
+POST https://pruebas.travelamedida.com/login
+POST data: _token=wxuq4u4lQSf0Lo1IPf38XAahN65OzYIQ6gXsvQ7L&email=&password=&remember=on
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=wxuq4u4lQSf0Lo1IPf38XAahN65OzYIQ6gXsvQ7L&email=&password=&remember=on] (Warning: blank fields detected): _token=wxuq4u4lQSf0Lo1IPf38XAahN65OzYIQ6gXsvQ7L&email=&password=&remember=on
+do you want to fill blank fields with random values? [Y/n] Y
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+[19:25:39] [WARNING] the web server responded with an HTTP error code (419) which could interfere with the results of the tests
+you have not declared cookie(s), while server wants to set its own ('laravel_session_1765493569=eyJpdiI6IlF...IjoiIn0%3D'). Do you want to use those [Y/n] Y
+[19:25:39] [INFO] checking if the target is protected by some kind of WAF/IPS
+[19:25:40] [CRITICAL] WAF/IPS identified as 'ModSecurity (Trustwave)'
+are you sure that you want to continue with further target testing? [Y/n] Y
+do you want sqlmap to try to automatically bypass the WAF/IPS during the run (e.g. by using a non-scanner User-Agent and tamper script(s))? [Y/n] Y
+[19:25:40] [INFO] using a random (non-scanner) User-Agent and browser-like headers to bypass the WAF/IPS
+[19:25:40] [INFO] testing if the target URL content is stable
+[19:26:11] [INFO] target URL content is stable
+[19:26:11] [INFO] ignoring POST parameter '_token'
+[19:26:11] [INFO] testing if POST parameter 'email' is dynamic
+[19:26:11] [WARNING] POST parameter 'email' does not appear to be dynamic
+[19:26:12] [WARNING] heuristic (basic) test shows that POST parameter 'email' might not be injectable
+[19:26:12] [INFO] testing for SQL injection on POST parameter 'email'
+[19:26:12] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:26:14] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:26:15] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[19:26:17] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[19:26:19] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[19:26:21] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[19:26:23] [INFO] testing 'H2 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (CAST)'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
+[19:26:24] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[19:26:28] [WARNING] POST parameter 'email' does not seem to be injectable
+[19:26:28] [INFO] testing if POST parameter 'password' is dynamic
+[19:26:29] [WARNING] POST parameter 'password' does not appear to be dynamic
+[19:26:29] [WARNING] heuristic (basic) test shows that POST parameter 'password' might not be injectable
+[19:26:30] [INFO] testing for SQL injection on POST parameter 'password'
+[19:26:30] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:26:32] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:26:32] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[19:26:34] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[19:26:36] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[19:26:38] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[19:26:40] [INFO] testing 'H2 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (CAST)'
+[19:26:42] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[19:26:46] [WARNING] POST parameter 'password' does not seem to be injectable
+[19:26:46] [INFO] testing if POST parameter 'remember' is dynamic
+[19:26:47] [WARNING] POST parameter 'remember' does not appear to be dynamic
+[19:26:47] [WARNING] heuristic (basic) test shows that POST parameter 'remember' might not be injectable
+[19:26:47] [INFO] testing for SQL injection on POST parameter 'remember'
+[19:26:47] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:26:49] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:26:50] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[19:26:52] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[19:26:54] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[19:26:56] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[19:26:57] [INFO] testing 'H2 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (CAST)'
+[19:26:59] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[19:27:03] [WARNING] POST parameter 'remember' does not seem to be injectable
+[19:27:03] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. Please retry with the switch '--text-only' (along with --technique=BU) as this case looks like a perfect candidate (low textual content along with inability of comparison engine to detect at least one dynamic parameter). As a WAF/IPS ('modsecurity') was identified during the run, you are strongly advised to retry with option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[19:27:03] [WARNING] HTTP error codes detected during run:
+419 (?) - 66 times, 406 (Not Acceptable) - 72 times
+[6/6] Form:
+POST https://pruebas.travelamedida.com/register
+POST data: _token=Jn9aYmCU72zpy90YZhfnmGRFHVcY4SHBO17iOcPS&name=&email=&password=&password_confirmation=&terms=on
+do you want to test this form? [Y/n/q] 
+> Y
+Edit POST data [default: _token=Jn9aYmCU72zpy90YZhfnmGRFHVcY4SHBO17iOcPS&name=&email=&password=&password_confirmation=&terms=on] (Warning: blank fields detected): _token=Jn9aYmCU72zpy90YZhfnmGRFHVcY4SHBO17iOcPS&name=&email=&password=&password_confirmation=&terms=on
+do you want to fill blank fields with random values? [Y/n] Y
+POST parameter '_token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] N
+[19:27:06] [WARNING] the web server responded with an HTTP error code (419) which could interfere with the results of the tests
+you have not declared cookie(s), while server wants to set its own ('laravel_session_1765493569=eyJpdiI6Ik1...IjoiIn0%3D'). Do you want to use those [Y/n] Y
+[19:27:06] [INFO] checking if the target is protected by some kind of WAF/IPS
+[19:27:06] [CRITICAL] WAF/IPS identified as 'ModSecurity (Trustwave)'
+are you sure that you want to continue with further target testing? [Y/n] Y
+do you want sqlmap to try to automatically bypass the WAF/IPS during the run (e.g. by using a non-scanner User-Agent and tamper script(s))? [Y/n] Y
+[19:27:06] [INFO] using a random (non-scanner) User-Agent and browser-like headers to bypass the WAF/IPS
+[19:27:06] [INFO] testing if the target URL content is stable
+[19:27:09] [INFO] target URL content is stable
+[19:27:09] [INFO] ignoring POST parameter '_token'
+[19:27:09] [INFO] testing if POST parameter 'name' is dynamic
+[19:27:10] [WARNING] POST parameter 'name' does not appear to be dynamic
+[19:27:10] [WARNING] heuristic (basic) test shows that POST parameter 'name' might not be injectable
+[19:27:10] [INFO] testing for SQL injection on POST parameter 'name'
+[19:27:10] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:27:13] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:27:13] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[19:27:15] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[19:27:17] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[19:27:19] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[19:27:21] [INFO] testing 'H2 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (CAST)'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
+[19:27:22] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[19:27:26] [WARNING] POST parameter 'name' does not seem to be injectable
+[19:27:26] [INFO] testing if POST parameter 'email' is dynamic
+[19:27:27] [WARNING] POST parameter 'email' does not appear to be dynamic
+[19:27:27] [WARNING] heuristic (basic) test shows that POST parameter 'email' might not be injectable
+[19:27:28] [INFO] testing for SQL injection on POST parameter 'email'
+[19:27:28] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:27:30] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:27:30] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[19:27:32] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[19:27:34] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[19:27:36] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[19:27:38] [INFO] testing 'H2 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (CAST)'
+[19:27:40] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[19:27:44] [WARNING] POST parameter 'email' does not seem to be injectable
+[19:27:44] [INFO] testing if POST parameter 'password' is dynamic
+[19:27:45] [WARNING] POST parameter 'password' does not appear to be dynamic
+[19:27:45] [WARNING] heuristic (basic) test shows that POST parameter 'password' might not be injectable
+[19:27:45] [INFO] testing for SQL injection on POST parameter 'password'
+[19:27:45] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:27:47] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:27:48] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[19:27:50] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[19:27:52] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[19:27:54] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[19:27:56] [INFO] testing 'H2 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (CAST)'
+[19:27:57] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[19:28:01] [WARNING] POST parameter 'password' does not seem to be injectable
+[19:28:01] [INFO] testing if POST parameter 'password_confirmation' is dynamic
+[19:28:02] [WARNING] POST parameter 'password_confirmation' does not appear to be dynamic
+[19:28:02] [WARNING] heuristic (basic) test shows that POST parameter 'password_confirmation' might not be injectable
+[19:28:02] [INFO] testing for SQL injection on POST parameter 'password_confirmation'
+[19:28:02] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:28:04] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:28:05] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[19:28:07] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[19:28:09] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[19:28:11] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[19:28:13] [INFO] testing 'H2 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (CAST)'
+[19:28:15] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[19:28:19] [WARNING] POST parameter 'password_confirmation' does not seem to be injectable
+[19:28:19] [INFO] testing if POST parameter 'terms' is dynamic
+[19:28:19] [WARNING] POST parameter 'terms' does not appear to be dynamic
+[19:28:20] [WARNING] heuristic (basic) test shows that POST parameter 'terms' might not be injectable
+[19:28:20] [INFO] testing for SQL injection on POST parameter 'terms'
+[19:28:20] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:28:22] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:28:23] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[19:28:25] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[19:28:26] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[19:28:28] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[19:28:30] [INFO] testing 'H2 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (CAST)'
+[19:28:32] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[19:28:36] [WARNING] POST parameter 'terms' does not seem to be injectable
+[19:28:36] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Rerun without providing the option '--technique'. Please retry with the switch '--text-only' (along with --technique=BU) as this case looks like a perfect candidate (low textual content along with inability of comparison engine to detect at least one dynamic parameter). As a WAF/IPS ('modsecurity') was identified during the run, you are strongly advised to retry with option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[19:28:36] [WARNING] HTTP error codes detected during run:
+419 (?) - 102 times, 406 (Not Acceptable) - 126 times
+[19:28:36] [INFO] you can find results of scanning in multiple targets mode inside the CSV file '/share/Unifranz/Diplomado auditoria informatica/Modulo 2/proyecto/sqlmap/root-out/results-09282026_0725pm.csv'
+
+[*] ending @ 19:28:36 /2026-09-28/
+

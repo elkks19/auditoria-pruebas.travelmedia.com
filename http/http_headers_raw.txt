@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Mon, 28 Sep 2026 22:53:43 GMT
+Server: Apache
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6Im1yQ3BwQkI4TU8yTnJyQ1JyTFJHQkE9PSIsInZhbHVlIjoieC9ScVZjRi9yelJ5cDhscTN1Rlc3T2NmSlljQVB0aEpTQzVVMXFKTlFKS1duQ2x3K3NoSHZNV2FublM5QUJ4OVBHQWF6NUNGcFpZd3ZkcnlISFE3NEkzeWFwQ1ovUXp5RERKMU1pWGJNa01TSDdhVElaK21wWGJOU0pTd01xMTQiLCJtYWMiOiJmMDI2ZWQ5NzNmNzBiN2U3NTNkNzM2NTI4MzM2NmM2NWMwMTM5ZmZkMzQ3NzY0ODc0ZjFhZDVjYWRmN2M0NzM4IiwidGFnIjoiIn0%3D; expires=Tue, 29 Sep 2026 00:53:43 GMT; Max-Age=7200; path=/; domain=.travelamedida.com; secure; samesite=none
+Set-Cookie: laravel_session_1765493569=eyJpdiI6ImJNRkQwVG1DS2FGWUlwYUNhb3E5dlE9PSIsInZhbHVlIjoiWjMyR2xuTWQ1ZHhwbXhFT01KWnlLd2xRUTU5eDVOWDFRcnEva3pEUkVmNWVZMWNYY1ppckxrY3NmSWxLZXBUbndlU2JjZllmL1R6VW9kQXdKbEdGbE1TdzBkRVl6OGFtVk5YZldkK1Z5d3BlU0tDRHZaa3RjeG13Yk9MMTJwOCsiLCJtYWMiOiI3YTc3OTY2Y2U2Yjg0ZTEwNGI2YmQxNGJlYjA4Y2QyZTFkNzlhNWFlZWU1MTgwZTQxNDNkZGY3Zjc1OGFmNjM2IiwidGFnIjoiIn0%3D; expires=Tue, 29 Sep 2026 00:53:43 GMT; Max-Age=7200; path=/; domain=.travelamedida.com; secure; httponly; samesite=none
+Upgrade: h2,h2c
+Connection: Upgrade
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+

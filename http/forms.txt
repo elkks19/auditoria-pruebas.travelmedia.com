@@ -1,0 +1,4 @@
+94:                                        <form id="currency-form-USD" action="/cambiar-moneda/USD" method="POST" class="d-none">
+104:                                        <form id="currency-form-BOB" action="/cambiar-moneda/BOB" method="POST" class="d-none">
+114:                                        <form id="currency-form-BRL" action="/cambiar-moneda/BRL" method="POST" class="d-none">
+124:                                        <form id="currency-form-PYG" action="/cambiar-moneda/PYG" method="POST" class="d-none">

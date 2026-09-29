@@ -1,0 +1,7 @@
+Server:		100.107.121.144
+Address:	100.107.121.144#53
+
+Non-authoritative answer:
+Name:	pruebas.travelamedida.com
+Address: 162.215.121.114
+
